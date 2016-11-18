@@ -52,7 +52,8 @@ g_default_template = template '/etc/default/grafana-server' do
     grafana_home: node['grafana']['home'],
     log_dir: node['grafana']['log_dir'],
     data_dir: node['grafana']['data_dir'],
-    conf_dir: node['grafana']['conf_dir']
+    conf_dir: node['grafana']['conf_dir'],
+    plugins_dir: node['grafana']['plugins_dir']
   )
   owner 'root'
   group 'root'
